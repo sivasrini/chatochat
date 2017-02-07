@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+<script type="text/javascript" src="JS/blog.js"></script>
+<link rel="stylesheet" href="resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('http://weloveiconfonts.com/api/?family=fontawesome');
+
+$color: #79b;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: radial-gradient(ellipse at center center, $color 0%, darken($color, 25%) 100%);
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  background: url('http://abload.de/img/map75bds72.png') center center no-repeat;
+}
+
+#jumbotron {
+      margin-bottom: 0;
+      background-image: url("resources/images/g.jpg");
+      background-color:red;
+background-size: cover;
+color:white;
+    }
+    .form-signin {
+  max-width: 280px;
+  margin: 60px auto 10px;
+
+  .form-signin-heading {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+	  margin-bottom: 20px;
+	}
+</style>
+</head>
+<body ng-app="chat">
+<div ng-controller="mycon">
+<div class="jumbotron" id="jumbotron">
+
+    <h1>Chat'o'Chat</h1>  
+  </div>
+  <div class="container">  
+<form class="form-signin"> 
+      <h1 class="form-signin-heading" style="color:black;">Register</h1><br>
+      <input type="text" class="form-control" name="name" placeholder="name" ng-model="name" required="" autofocus="" />
+      <br>
+      <input type="text" class="form-control" name="username" placeholder="Email Address" ng-model="username" required="" autofocus="" />
+      <br>
+      <input type="password" class="form-control" name="password" placeholder="Password" ng-model="passwod" required=""/>     
+      <br>
+      <input type="text" class="form-control" name="mobilenumber" placeholder="mobile number" ng-model="mobilenumber"required=""/>     
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register here</button>   
+    </form>
+    <br><br>
+  <a href="#"><p class="text-center sign-up"><strong>Login</strong></p></a>
+  <br><br><br>
+</div></div>
+</body>
+</html>
